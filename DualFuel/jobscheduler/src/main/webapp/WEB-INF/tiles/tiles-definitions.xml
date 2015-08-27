@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE tiles-definitions PUBLIC        
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"        
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/jsp/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/jsp/common/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/common/footer.jsp" />
+	</definition>
+	<definition name="jobHome" extends="base.definition">
+		<put-attribute name="title" value="Job Manager" />
+		<put-attribute name="body" value="/WEB-INF/jsp/job/job.jsp" />
+	</definition>
+
+    <definition name="appHome" template="/WEB-INF/jsp/home3.jsp">
+    </definition>
+
+    <definition name="conEdHome" template="/WEB-INF/jsp/home2.jsp">
+    </definition>
+	
+	<definition name="jobTable" template="/WEB-INF/jsp/job/jobTable.jsp">
+	</definition>
+	
+	<definition name="jobHome" extends="base.definition">
+		<put-attribute name="title" value="Job Manager" />
+		<put-attribute name="body" value="/WEB-INF/jsp/job/job.jsp" />
+	</definition>
+	
+	<definition name="addJob" extends="base.definition">
+		<put-attribute name="title" value="Add Job to schedular" />
+		<put-attribute name="body" value="/WEB-INF/jsp/job/addJob.jsp" />
+	</definition>
+	
+	<definition name="jobParam" template="/WEB-INF/jsp/job/jobParam.jsp">
+	</definition>
+	
+	<definition name="login" extends="base.definition">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
+	</definition>
+	
+	<definition name="otpLogin" extends="base.definition">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="body" value="/WEB-INF/jsp/otp.jsp" />
+	</definition>
+	
+	<definition name="resetPassword" extends="base.definition">
+		<put-attribute name="title" value="User Management" />
+		<put-attribute name="body" value="/WEB-INF/jsp/resetpassword.jsp" />
+	</definition>
+	
+</tiles-definitions> 
